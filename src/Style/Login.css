@@ -1,0 +1,201 @@
+#container{
+	/*background: rgb(61,53,60);
+    background: linear-gradient(90deg, rgba(61,53,60,1) 2%, rgba(139,0,139,1) 57%, rgba(0,0,0,0.5186449579831933) 97%);*/
+    background: url("https://wellimaginethat.com.au/wp-content/uploads/2016/11/purple-background.jpg");
+	height: 100vh;
+
+}
+
+
+.icon input[type=text]{
+	padding-left: 40px;
+
+}
+
+.icon input[type=password]{
+	padding-left: 40px;
+
+}
+.icon input[type=email]{
+	padding-left: 40px;
+}
+
+.icon input[type=number]{
+	padding-left:40px;
+}
+
+.icon{
+	position: relative;
+}
+
+.icon i{
+position: absolute;
+left:0;
+top:5px;
+padding: 9px 8px;
+color:#aaa;
+/*transition: 3s;*/
+}
+
+.icon input[type=text]:focus + i{
+	color: dodgerBlue;
+}
+
+.icon input[type=password]:focus + i{
+	color: dodgerBlue;
+}
+
+.icon input[type=email]:focus + i{
+	color: dodgerBlue;
+}
+
+.icon input[type=number]:focus + i{
+	color: dodgerBlue;
+}
+.login-left{
+	text-align: center;
+	color:#fff;
+	padding: 30px;
+	position: relative;
+	top: 80px;
+}
+
+.login-left img{
+	margin-top: 60px;
+	margin-bottom: 18px;
+	width: 80px;
+	animation: mover 1s infinite alternate;
+}
+
+
+.login-left p{
+	padding:20px 20px 0;
+}
+
+.login-left .btn-primary{
+	border-radius: 1.5rem;
+	border: none;
+	width: 120px;
+	font-weight: 600;
+	color:#555;
+	background: #f8f8f8;
+	margin-top:20px;
+	padding: 10px;
+}
+
+#input-2{
+	margin-top:20px;
+}
+
+.login-left .btn-primary:hover{
+	background:  #B64EBD;
+	color:white;
+}
+
+.login-right{
+	position: relative;
+	top: 120px;
+	background: #f8f8f8;
+	border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+	border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+	padding: 50px;
+	left:20%;
+	
+}
+
+.login-right h2{
+	border:none;
+	text-align: center;
+	margin-bottom: 10px;
+	color:#555;
+
+}
+
+.login-form{
+	padding: 30px
+}
+
+.login-right .btn-primary{
+	float:center;
+	border-radius: 1.5rem;
+	border: none;
+	width: 120px;
+	background: #8b008b;
+	font-weight: 600;
+	color:#white;
+	margin-top:20px;
+}
+
+.login-right .btn-primary:hover{
+	background: #B64EBD;
+}
+
+#register-right{
+	position: relative;
+	bottom: 70px;
+}	
+
+/*#btn-register{
+	position: relative;
+	top:50px;
+	right:70%;
+}*/
+#div {
+  width:72px;
+  margin:80px auto;
+  position:relative;
+}
+#span{
+  height:12px;
+  width:12px;
+  border-radius:50%;
+  background-color:#B64EBD;
+  position:absolute;
+  bottom:0;
+  animation:wave 2.5s infinite ease-in-out
+}
+#span:first-child{
+  animation-delay:.2s;
+}
+#span:nth-child(2){
+    animation-delay:.4s;
+    left:15px
+}
+#span:nth-child(3){
+    animation-delay:.6s;
+    left:30px
+}
+#span:nth-child(4){
+    animation-delay:.8s;
+    left:45px
+}
+#span:last-child{
+    animation-delay:1s;
+    right:0
+}
+@keyframes wave{
+  0%, 50%, 100%{
+    transform: translatey(0);
+  }
+  25%{
+    transform:translatey(-15px);
+    background-color:#F8F8F8;
+  }
+}
+
+@keyframes mover{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(-20px);}
+
+}
+
+@media screen and (max-width: 768px){
+	.login-right{
+		position: relative;
+/*	margin-right:20%;*/
+	margin-left:-20%; 
+	}
+
+}

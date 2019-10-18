@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/v4-shims.css">
+		<title>mini project</title>
+	</head>
+	<body>
+		<div id="root"></div>
+  </body>
+  <script src="https://js.pusher.com/5.0/pusher.min.js"></script>
+  <script>
+
+    // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('4f688d2f2b7ce5101fad', {
+      cluster: 'ap1',
+      forceTLS: true
+    });
+
+    var channel = pusher.subscribe('my-channel');
+    channel.bind('my-event', function(data) {
+      alert(JSON.stringify(data));
+    });
+  </script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script crossorigin src="https://fracta.serveo.net/register"></script>
+</html>
+<!-- 
+<img src="https://static.thenounproject.com/png/138926-200.png"/>
+                      <form onSubmit={this.signIn} logOut={this.s}>
+                        <div id="btn-username">
+                          <label>
+                            Username
+                            <input 
+                            id="input-1"
+                            className="form-control"
+                            type="text"
+                            name="name" 
+                            placeholder="username..."
+                            value={this.state.name}
+                            onChange={this.handleChange}
+                            required
+                            />
+                          </label>
+                        </div>
+                        <div id="btn-password">
+                          <label>
+                            Password
+                            <input 
+                            id="input-2"
+                            className="form-control"
+                            type="password" 
+                            name="password" 
+                            placeholder="password.."
+                            value={this.state.password}
+                            onChange={this.handleChange}
+                            required
+                            />
+                          </label>
+                        </div>
+                        <div className="wrap">
+                          <button className="button" type="submit">Login</button>
+                        </div>
+                      </form>
+                      <Link to="/register">
+                        <a id="regis">register</a>
+                      </Link>
+
+
+
+
+
+                         <div className="img-body">
+        <div className="img-cover-body">
+
+          <div className="login">
+            <h1>Register</h1>
+            <form onSubmit={this.handleSave}>
+              <span className="fa fa-user" id="fa"></span>
+              <label className="form-login">
+                name
+                <input
+                  className="form-control"
+                  placeholder="username..."
+                  type="text"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+              <label className="form-login">
+                Email
+                <input
+                  className="form-control"
+                  placeholder="email..."
+                  type="email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+              <label className="form-login">
+                Password
+                <input
+                  className="form-control"
+                  placeholder="password..."
+                  type="password"
+                  name="password"
+                  value={this.state.password}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+              <label className="form-login">
+                telp
+                <input
+                  className="form-control"
+                  placeholder="telp..."
+                  type="telp"
+                  name="telp"
+                  value={this.state.telp}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+                 {/* <label className="form-login">
+                avatar
+                <input
+                  className="form-control"
+                  placeholder="avatar..."
+                  type="avatar"
+                  name="avatar"
+                  value={this.state.avatar}
+                  onChange={this.handleChange}
+                  required
+                /> 
+              </label> */}
+              <button type="submit" className="btn btn-primary" id="btn">
+                Simpan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+ -->

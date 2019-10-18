@@ -1,0 +1,162 @@
+#chat{
+    box-shadow: 0 2px 5px black;
+}
+
+
+
+#online{
+    position: relative;
+    top:15px;
+    right:35px;
+    color: #367DD0;
+}
+
+.custom-file-input{
+    height:90px;
+}
+#img{
+    margin-bottom: 60px;
+}
+#upload{
+    padding:20 30;
+    color:#fff;
+    border:none;
+    font-size: 8px;
+    border-radius:5px;
+    position: relative;
+    left:-70px; 
+    top:200px;
+}
+
+.edit-name{
+    position: relative;
+    top: 120px;
+
+}
+
+.list-group-item {
+    width: 100;
+    background: none;
+    margin-top: 20px;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    padding:20 30;
+    color:#fff;
+    background-color:#6a1b9a;
+    border:none;
+    font-size: 8px;
+    border-radius:5px;
+    margin-left:50px;
+    margin-top: 190px;
+    position: absolute;
+}
+
+#button-edit{
+     padding:20 30;
+    color:#6a1b9a;
+    border:none;
+    font-size: 8px;
+    border-radius:5px;
+    outline: none;
+
+
+}
+
+#button-edit:hover{
+    background: none;
+    color: #005ABA;
+}
+
+.image-profil{
+    background: url("https://imageshack.com/i/pl7LxIhyp");
+    height: 250px;
+      
+}
+#img{
+    margin-left: 30%;
+}
+
+#upload button{
+        padding:20 30;
+    color:#fff;
+    background-color:#6a1b9a;
+    border:none;
+    font-size: 8px;
+    border-radius:5px;
+    position: absolute;
+    left:240px;
+    bottom: 345px;
+
+}
+#edit{
+    color:white;
+    border:none;
+    font-size: 8px;
+  
+    border-radius:10px;
+    outline: none;
+    border: none;
+}
+
+#edit:hover{
+    color:lightblue;
+}
+#btn-edit{
+    border:none;
+    outline: none;
+    font-size: 8px;
+    border-radius:5px;
+  
+}
+#btn-edit:hover{
+   background: none;
+}
+
+#btn-profile{
+    margin-left:29%;
+}
+
+#icon-edit{
+    color:#367DD0;
+    position: relative;
+    bottom: 35px;
+}
+
+#icon-edit:hover{
+    color: blue;
+}
+
+#nameUser{
+    font-size: 12px;
+    margin-left:50px;
+    position: absolute;
+  
+}
+
+#btn-chat{
+    margin:3px;
+}
+
+#icon-mess input[type=text]{
+    padding-left:40px; 
+
+}
+
+#icon-mess i{
+    position:absolute;
+    bottom:3px;
+    margin-left: 5px;
+    font-size: 30px;
+    color:#CED4DA;
+}
+
+#send{
+    position: absolute;
+    left:90%;
+    color:#6A1B9A!important;
+}
+
+#send:hover{
+    color: blue;
+}
